@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delícias da Lilian - Confeitaria Artesanal</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome (Ícones) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Swiper JS (Carrossel) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Nosso Arquivo de Estilo -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CABEÇALHO E NAVEGAÇÃO -->
+    <header class="main-header">
+      <nav class="main-nav container">
+        <div class="nav-brand">
+          <a href="#">Delícias da Lilian</a>
+        </div>
+        <div class="nav-links">
+          <a href="#produtos">Produtos</a>
+          <a href="#sazonais">Datas Especiais</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <a href="#contato" class="btn-encomenda"> Fazer Encomenda </a>
+        <button class="mobile-menu-button" id="mobile-menu-button">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+      <!-- Menu Dropdown Mobile -->
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="#produtos">Produtos</a>
+        <a href="#sazonais">Datas Especiais</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="#contato" class="btn-encomenda-mobile"> Fazer Encomenda </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- SEÇÃO HERO -->
+      <section id="inicio" class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-info">
+              <div class="hero-stars">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="hero-star"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="hero-star"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="hero-star"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="hero-star"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="hero-star"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  ></path>
+                </svg>
+                <span class="hero-clients"
+                  >Mais de 500 clientes satisfeitos</span
+                >
+              </div>
+              <h1 class="hero-title">
+                Doces feitos com
+                <span class="hero-title--highlight"
+                  >amor
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="hero-heart"
+                  >
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                    ></path>
+                  </svg>
+                </span>
+                <br />e dedicação
+              </h1>
+              <p class="hero-desc">
+                Bem-vindos à Confeitaria Lilian! Criamos doces artesanais
+                especiais para tornar seus momentos ainda mais doces. Bolos,
+                trufas, brigadeiros e muito mais, tudo feito com ingredientes
+                selecionados e muito carinho.
+              </p>
+              <div class="hero-actions">
+                <button class="btn-main">
+                  <a href="#produtos">Ver Produtos</a>
+                </button>
+
+                <button class="btn-secondary">
+                  <a href="#contato" 
+                    >Falar com a Lilian</a>
+                </button>
+              </div>
+            </div>
+            <div class="hero-image-block">
+              <div class="hero-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Bolos artesanais da Confeitaria Lilian"
+                  class="hero-image"
+                />
+                <div class="hero-badge hero-badge--top-left">
+                  <span class="hero-badge-number">10+</span>
+                  <p class="hero-badge-label">Anos de<br />Experiência</p>
+                </div>
+                <div class="hero-badge hero-badge--bottom-right">
+                  <span class="hero-badge-number">100%</span>
+                  <span class="hero-badge-label">Artesanal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO DE PRODUTOS PRINCIPAIS -->
+      <section id="produtos" class="section">
+        <div class="container">
+          <h2 class="section-title">Nossas Delícias</h2>
+          <p class="section-subtitle">Feitas para você</p>
+          <div class="product-grid">
+            <!-- Produto 1: Bolos -->
+            <div class="product-card">
+              <img
+                src="https://placehold.co/600x400/f871b5/ffffff?text=Bolos+Decorados"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x400/f871b5/ffffff?text=Bolos';"
+                alt="Imagem de um bolo decorado para festas"
+              />
+              <div class="product-card-content">
+                <h3>Bolos Festivos</h3>
+                <p>
+                  Bolos personalizados para aniversários, casamentos e todas as
+                  ocasiões. Sabores incríveis e decorações que encantam.
+                </p>
+              </div>
+            </div>
+            <!-- Produto 2: Doces Finos -->
+            <div class="product-card">
+              <img
+                src="https://placehold.co/600x400/a855f7/ffffff?text=Brigadeiros+e+Trufas"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x400/a855f7/ffffff?text=Doces';"
+                alt="Imagem de brigadeiros gourmet e trufas variadas"
+              />
+              <div class="product-card-content">
+                <h3>Doces Finos</h3>
+                <p>
+                  Brigadeiros gourmet, trufas recheadas e outros doces que
+                  derretem na boca. Perfeitos para presentear ou para sua festa.
+                </p>
+              </div>
+            </div>
+            <!-- Produto 3: Bolos no Pote -->
+            <div class="product-card">
+              <img
+                src="https://placehold.co/600x400/84cc16/ffffff?text=Bolo+no+Pote"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x400/84cc16/ffffff?text=Bolo+no+Pote';"
+                alt="Imagem de um delicioso bolo no pote com camadas"
+              />
+              <div class="product-card-content">
+                <h3>Bolo no Pote</h3>
+                <p>
+                  A combinação perfeita de massa fofinha e recheio cremoso em
+                  uma porção individual. Praticidade e muito sabor!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO DATAS COMEMORATIVAS -->
+      <section id="sazonais" class="section bg-light-pink">
+        <div class="container">
+          <h2 class="section-title">Celebre Datas Especiais</h2>
+          <p class="section-subtitle">Com doçura e afeto</p>
+          <div class="sazonais-grid">
+            <!-- Páscoa -->
+            <div class="sazonal-card">
+              <i class="fas fa-egg icon-pascoa"></i>
+              <h3>Páscoa</h3>
+              <p>
+                Ovos de colher e trufas recheadas com os sabores que você mais
+                ama. Uma Páscoa inesquecível!
+              </p>
+            </div>
+            <!-- Dia das Mães -->
+            <div class="sazonal-card">
+              <i class="fas fa-heart icon-maes"></i>
+              <h3>Dia das Mães</h3>
+              <p>
+                Cestas de café da manhã e bolos em formato de coração para
+                homenagear a mulher mais importante da sua vida.
+              </p>
+            </div>
+            <!-- Dia dos Namorados -->
+            <div class="sazonal-card">
+              <i class="fas fa-gift icon-namorados"></i>
+              <h3>Dia dos Namorados</h3>
+              <p>
+                Caixas com doces finos e sobremesas românticas para compartilhar
+                com seu amor.
+              </p>
+            </div>
+            <!-- Natal -->
+            <div class="sazonal-card">
+              <i class="fas fa-holly-berry icon-natal"></i>
+              <h3>Natal</h3>
+              <p>
+                Panetones trufados, chocotones e sobremesas especiais para a sua
+                ceia de Natal ser ainda mais feliz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO SOBRE -->
+      <section id="sobre" class="section">
+        <div class="about-container container">
+          <div class="about-image">
+            <img
+              src="https://placehold.co/500x500/fbcfe8/333333?text=Lilian"
+              onerror="this.onerror=null;this.src='https://placehold.co/500x500/fbcfe8/333333?text=Foto+da+Lilian';"
+              alt="Foto sorridente da confeiteira Lilian"
+            />
+          </div>
+          <div class="about-text">
+            <p class="section-subtitle">Feito com amor</p>
+            <h2 class="section-title">A paixão por trás de cada doce</h2>
+            <p>
+              Olá, eu sou a Lilian! Minha jornada na confeitaria começou como um
+              hobby, uma forma de expressar carinho pela minha família e amigos.
+              Essa paixão cresceu e hoje tenho o prazer de compartilhar minhas
+              criações com você.
+            </p>
+            <p>
+              Cada bolo, cada brigadeiro é feito com ingredientes selecionados
+              e, o mais importante, com muito amor e dedicação. Meu objetivo é
+              transformar seus momentos especiais em memórias doces e
+              inesquecíveis.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEPOIMENTOS DOS CLIENTES-->
+      <section class="clients" id="clientes">
+        <div class="Testimonials">
+          <div class="clients__apresentation">
+            <h1 class="clients__title">
+              <span class="clients__title--highlight">Doces palavras...</span>
+            </h1>
+            <p class="clients__subtitle">
+              Quem provou nossos trabalhos guardam mais do que sabores <br />
+              guardam mémorias felizes.
+            </p>
+            <p class="clients__desc">
+              Veja como nossos doces ajudaram a transformar pequenos momentos
+              <br />
+              em grandes lembranças inesquecíveis .
+            </p>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Card 1 -->
+              <div class="swiper-slide">
+                <div class="clients__person">
+                  <div class="clients__person-details">
+                    <img
+                      class="clients__profile-image"
+                      src="https://placehold.co/48x48/ec4899/ffffff?text=R"
+                      onerror="this.onerror=null;this.src='https://placehold.co/48x48/ec4899/ffffff?text=R';"
+                      alt="Foto do cliente Rogério Vieira"
+                    />
+                    <div class="clients__person-text">
+                      <span class="clients__person-name">Rogerio Vieira</span>
+                      <span class="clients__person-date">12.Agosto. 2022</span>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="https://placehold.co/24x24/4285f4/ffffff?text=G"
+                      alt="Ícone do Google"
+                    />
+                  </div>
+                </div>
+                <div class="clients__review">
+                  <div class="clients__review-icons">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <img
+                      class="clients__confere"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg=="
+                      alt="instagram-check-mark"
+                    />
+                  </div>
+                  <div class="clients__review-content">
+                    <p class="clients__review-text">
+                      "Com a AKAME, meu rendimento pessoal alcançou resultados
+                      incríveis. Recomendo seus serviços para ajudar qualquer
+                      pessoa a se organizar."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="swiper-slide">
+                <div class="clients__person">
+                  <div class="clients__person-details">
+                    <img
+                      class="clients__profile-image"
+                      src="https://placehold.co/48x48/ec4899/ffffff?text=M"
+                      onerror="this.onerror=null;this.src='https://placehold.co/48x48/ec4899/ffffff?text=M';"
+                      alt="Foto da cliente Maria Silva"
+                    />
+                    <div class="clients__person-text">
+                      <span class="clients__person-name">Maria Silva</span>
+                      <span class="clients__person-date"
+                        >15.Setembro. 2022</span
+                      >
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="https://placehold.co/24x24/4285f4/ffffff?text=G"
+                      alt="Ícone do Google"
+                    />
+                  </div>
+                </div>
+                <div class="clients__review">
+                  <div class="clients__review-icons">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <img
+                      class="clients__confere"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg=="
+                      alt="instagram-check-mark"
+                    />
+                  </div>
+                  <div class="clients__review-content">
+                    <p class="clients__review-text">
+                      "A AKAME transformou meus projetos, aumentando minha
+                      produtividade e gerando resultados reais. Estou muito
+                      satisfeita."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="swiper-slide">
+                <div class="clients__person">
+                  <div class="clients__person-details">
+                    <img
+                      class="clients__profile-image"
+                      src="https://placehold.co/48x48/ec4899/ffffff?text=P"
+                      onerror="this.onerror=null;this.src='https://placehold.co/48x48/ec4899/ffffff?text=P';"
+                      alt="Foto do cliente Pedro Santos"
+                    />
+                    <div class="clients__person-text">
+                      <span class="clients__person-name">Pedro Santos</span>
+                      <span class="clients__person-date">3.Outubro. 2022</span>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="https://placehold.co/24x24/4285f4/ffffff?text=G"
+                      alt="Ícone do Google"
+                    />
+                  </div>
+                </div>
+                <div class="clients__review">
+                  <div class="clients__review-icons">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <img
+                      class="clients__confere"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg=="
+                      alt="instagram-check-mark"
+                    />
+                  </div>
+                  <div class="clients__review-content">
+                    <p class="clients__review-text">
+                      "Fantástico! A organização que a AKAME proporciona é
+                      impressionante. Minha produtividade aumentou
+                      significativamente."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="swiper-slide">
+                <div class="clients__person">
+                  <div class="clients__person-details">
+                    <img
+                      class="clients__profile-image"
+                      src="https://placehold.co/48x48/ec4899/ffffff?text=A"
+                      onerror="this.onerror=null;this.src='https://placehold.co/48x48/ec4899/ffffff?text=A';"
+                      alt="Foto da cliente Ana Costa"
+                    />
+                    <div class="clients__person-text">
+                      <span class="clients__person-name">Ana Costa</span>
+                      <span class="clients__person-date">8.Novembro. 2022</span>
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src="https://placehold.co/24x24/4285f4/ffffff?text=G"
+                      alt="Ícone do Google"
+                    />
+                  </div>
+                </div>
+                <div class="clients__review">
+                  <div class="clients__review-icons">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <img
+                      class="clients__confere"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg=="
+                      alt="instagram-check-mark"
+                    />
+                  </div>
+                  <div class="clients__review-content">
+                    <p class="clients__review-text">
+                      "A melhor decisão que tomei foi usar a AKAME. O sistema é
+                      intuitivo e me ajuda a manter tudo organizado de forma
+                      eficiente."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navegação -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="./scripts/carrosel.js"></script>
+
+      <!-- GALERIA DE FOTOS -->
+      <section id="galeria" class="section">
+        <div class="container">
+          <h2 class="section-title">Galeria de Delícias</h2>
+          <p class="section-subtitle">Inspire-se</p>
+          <div class="gallery-grid">
+            <img
+              src="https://placehold.co/500x700/86198f/ffffff?text=Doce+1"
+              onerror="this.onerror=null;this.src='https://placehold.co/500x700/d63384/ffffff?text=Inspiração';"
+              alt="Imagem de doce"
+            />
+            <img
+              src="https://placehold.co/500x500/be185d/ffffff?text=Doce+2"
+              onerror="this.onerror=null;this.src='https://placehold.co/500x500/d63384/ffffff?text=Inspiração';"
+              alt="Imagem de doce"
+            />
+            <img
+              src="https://placehold.co/500x500/ef4444/ffffff?text=Doce+3"
+              onerror="this.onerror=null;this.src='https://placehold.co/500x500/d63384/ffffff?text=Inspiração';"
+              alt="Imagem de doce"
+            />
+            <img
+              src="https://placehold.co/500x800/16a34a/ffffff?text=Doce+4"
+              onerror="this.onerror=null;this.src='https://placehold.co/500x800/d63384/ffffff?text=Inspiração';"
+              alt="Imagem de doce"
+            />
+            <img
+              src="https://placehold.co/500x750/fb923c/ffffff?text=Doce+5"
+              onerror="this.onerror=null;this.src='https://placehold.co/500x750/d63384/ffffff?text=Inspiração';"
+              alt="Imagem de doce"
+            />
+            <img
+              src="https://placehold.co/500x450/4f46e5/ffffff?text=Doce+6"
+              onerror="this.onerror=null;this.src='https://placehold.co/500x450/d63384/ffffff?text=Inspiração';"
+              alt="Imagem de doce"
+            />
+            <img
+              src="https://placehold.co/500x600/ca8a04/ffffff?text=Doce+7"
+              onerror="this.onerror=null;this.src='https://placehold.co/500x600/d63384/ffffff?text=Inspiração';"
+              alt="Imagem de doce"
+            />
+            <img
+              src="https://placehold.co/500x700/0d9488/ffffff?text=Doce+8"
+              onerror="this.onerror=null;this.src='https://placehold.co/500x700/d63384/ffffff?text=Inspiração';"
+              alt="Imagem de doce"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO DE CONTATO E ENCOMENDAS -->
+      <section id="contato" class="contact-section">
+        <div class="container">
+          <h2 class="contact-title">Vamos conversar?</h2>
+          <p class="contact-subtitle">
+            Faça sua encomenda e deixe seu evento mais doce!
+          </p>
+          <p class="contact-text">
+            Clique no botão abaixo para me chamar no WhatsApp. Vamos planejar
+            juntos os doces perfeitos para sua ocasião!
+          </p>
+          <a
+            href="https://api.whatsapp.com/send?phone=+55 77 9842-0884&text=Olá!%20Gostaria%20de%20fazer%20uma%20encomenda."
+            target="_blank"
+            class="btn-whatsapp"
+          >
+            <i class="fab fa-whatsapp"></i> Encomendar pelo WhatsApp
+          </a>
+          <div class="social-links">
+            <p>Me siga nas redes sociais!</p>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="main-footer">
+      <div class="container">
+        <p>&copy; 2025 Delícias da Lilian. Todos os direitos reservados.</p>
+        <p class="footer-dev">Desenvolvido por Cauan Pereira Firmo</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
