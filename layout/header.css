@@ -1,0 +1,47 @@
+/* --- LAYOUT: HEADER --- */
+
+.main-header {
+  background: linear-gradient(135deg, var(--white) 0%, var(--pink-50) 100%);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Responsividade do header */
+@media (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .btn-encomenda {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-links {
+    display: none;
+  }
+
+  .btn-encomenda {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+}

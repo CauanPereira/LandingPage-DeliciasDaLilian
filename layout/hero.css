@@ -1,0 +1,55 @@
+/* --- LAYOUT: HERO SECTION --- */
+
+.hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 3rem 0;
+  margin-bottom: 50px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.hero-image-block {
+  position: relative;
+  animation: scale-in 1s;
+}
+
+/* Responsividade do Hero */
+@media (min-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .hero-image-wrapper {
+    max-width: 600px;
+  }
+}

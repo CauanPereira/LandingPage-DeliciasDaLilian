@@ -1,0 +1,138 @@
+/* --- COMPONENT: CONTACT FAQ --- */
+
+.contact-section {
+  background: var(--pink-50);
+  padding: 4rem 0;
+}
+
+.accordion__faq {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.accordion__elements {
+  margin-bottom: 3rem;
+}
+
+.accordion__description {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--brown-700);
+  margin: 0 0 1rem 0;
+  font-family: "Pacifico", cursive;
+}
+
+.accordion__title-1 {
+  font-size: 1.5rem;
+  color: var(--pink-500);
+  margin: 0;
+  font-weight: 600;
+}
+
+.accordion__content {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--pink-100);
+}
+
+.accordion__title-2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--brown-700);
+  margin: 0 0 1.5rem 0;
+}
+
+.accordion__title-3 {
+  font-size: 1.1rem;
+  color: var(--gray-600);
+  line-height: 1.8;
+  margin: 0 0 2.5rem 0;
+}
+
+.accordion__btn {
+  background: var(--pink-500);
+  color: var(--white);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
+}
+
+.accordion__btn:hover {
+  background: var(--pink-600);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.4);
+}
+
+.accordion__btn i {
+  font-size: 1.2rem;
+}
+
+/* Animações de reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .accordion__description {
+    font-size: 2.5rem;
+  }
+
+  .accordion__title-1 {
+    font-size: 1.3rem;
+  }
+
+  .accordion__content {
+    padding: 2rem;
+  }
+
+  .accordion__title-2 {
+    font-size: 1.7rem;
+  }
+
+  .accordion__title-3 {
+    font-size: 1rem;
+  }
+
+  .accordion__btn {
+    padding: 0.875rem 1.75rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion__description {
+    font-size: 2rem;
+  }
+
+  .accordion__content {
+    padding: 1.5rem;
+  }
+
+  .accordion__title-2 {
+    font-size: 1.5rem;
+  }
+
+  .accordion__btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

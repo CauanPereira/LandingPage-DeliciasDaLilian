@@ -1,0 +1,178 @@
+/* --- COMPONENTES: HERO --- */
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content{
+  padding: 0;
+}
+
+.hero-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-family: var(--font-brand);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-info {
+  animation: fade-in 1s;
+  width:100%;
+}
+
+.hero-stars {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-star {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--yellow-400);
+  fill: var(--yellow-400);
+}
+
+.hero-clients {
+  color: #000000;
+  margin-left: 0.75rem;
+  font-size: 1rem;
+}
+
+.hero-title {
+  font-family: var(--font-brand);
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--pink-500);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  position: relative;
+}
+
+.hero-title--highlight {
+  color: var(--brown-700);
+  position: relative;
+  display: inline-block;
+}
+
+.hero-heart {
+  width: 2rem;
+  height: 2rem;
+  color: var(--pink-400);
+  fill: var(--pink-400);
+  position: absolute;
+  top: -0.5rem;
+  right: -2.5rem;
+}
+
+.hero-desc {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+
+  gap: 1rem;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.18);
+  display: block;
+}
+
+.hero-badge {
+  position: absolute;
+  background: var(--brown-700);
+  color: var(--pink-500);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 2;
+  height: auto;
+}
+
+.hero-badge--top-left {
+  top: -1.5rem;
+  left: -1.5rem;
+}
+
+.hero-badge--bottom-right {
+  bottom: -1.5rem;
+  right: -4rem;
+  background: var(--brown-700);
+  color: var(--pink-500);
+}
+
+.hero-badge-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero-badge-label {
+  font-size: 0.75rem;
+  color: var(--white);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsividade do Hero Content */
+@media (min-width: 768px) {
+  .hero-content h1 {
+    font-size: 5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+}

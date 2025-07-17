@@ -1,0 +1,122 @@
+/* --- COMPONENT: MENU BOLOS --- */
+
+.menu-bolos-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+  background: var(--pink-50);
+}
+
+.menu-bolos-card {
+  background: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  max-width: 370px;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Poppins", Arial, sans-serif;
+  border: 2px solid var(--pink-500);
+}
+
+.menu-bolos-header {
+  background: var(--white);
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.menu-bolos-top {
+  background: var(--brown-800);
+  height: 60px;
+  border-bottom-left-radius: 40px 20px;
+  border-bottom-right-radius: 40px 20px;
+}
+
+.menu-bolos-title {
+  text-align: center;
+  margin-top: -35px;
+  margin-bottom: 10px;
+}
+
+.menu-bolos-cake {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.menu-bolos-main {
+  display: block;
+  font-family: "Pacifico", cursive, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: var(--brown-800);
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.menu-bolos-sub {
+  display: block;
+  font-family: "Pacifico", cursive, Arial, sans-serif;
+  font-size: 1.1rem;
+  color: var(--pink-500);
+  margin-bottom: 0.2rem;
+}
+
+.menu-bolos-content {
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--pink-50),
+    var(--pink-50) 20px,
+    var(--pink-100) 20px,
+    var(--pink-100) 40px
+  );
+}
+
+.menu-bolos-block {
+  margin-bottom: 1.2rem;
+}
+
+.menu-bolos-block h3 {
+  font-family: "Pacifico", cursive, Arial, sans-serif;
+  color: var(--brown-800);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-bolos-heart {
+  color: var(--pink-500);
+  font-size: 1.2rem;
+}
+
+.menu-bolos-block ul {
+  list-style: disc inside;
+  color: var(--brown-700);
+  font-size: 1rem;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.menu-bolos-list-2col {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  column-gap: 1.5rem;
+  list-style: disc inside;
+}
+
+.menu-bolos-block ul li {
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 500px) {
+  .menu-bolos-card {
+    max-width: 98vw;
+    border-radius: 12px;
+  }
+  .menu-bolos-content {
+    padding: 1rem 0.5rem;
+  }
+}

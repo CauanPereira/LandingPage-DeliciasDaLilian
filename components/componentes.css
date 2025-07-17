@@ -1,0 +1,16 @@
+/* --- COMPONENTES CONSOLIDADOS --- */
+
+/* Importando todos os componentes */
+@import url("./header-content.css");
+@import url("./hero-content.css");
+@import url("./about-content.css");
+@import url("./produtos-content.css");
+@import url("./sazonais-content.css");
+@import url("./gallery-content.css");
+@import url("./contact-content.css");
+@import url("./clients-content.css");
+@import url("./buttons.css");
+@import url("./product-cards.css");
+@import url("./menu-bolos.css");
+@import url("./validation.css");
+@import url("./faq-location-content.css");

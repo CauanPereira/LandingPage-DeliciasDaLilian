@@ -1,0 +1,15 @@
+/* --- MAIN CSS FILE (SMACSS) --- */
+
+/* Base */
+@import url("./base.css");
+
+/* Layout */
+@import url("../layout/layout.css");
+
+/* Components */
+@import url("../components/componentes.css");
+@import url("../components/commemorative-content.css");
+@import url("../components/clients-content.css");
+
+/* Layout */
+@import url("../layout/clients.css");

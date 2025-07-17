@@ -1,0 +1,133 @@
+/* --- COMPONENT: BUTTONS --- */
+
+.btn-main {
+  padding: 15px 37px;
+  border: none;
+  border-radius: 90px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  background: var(--pink-600);
+  transition: transform 0.3s;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-main a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.btn-main:hover {
+  transform: scale(1.06);
+}
+
+.btn-secondary {
+  padding: 15px 37px;
+  border: 1px solid var(--brown-700);
+  border-radius: 90px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: transparent;
+  transition: background-color 1s, color 1s;
+
+}
+
+.btn-secondary a {
+  text-decoration: none;
+  color: var(--brown-700);
+  font-weight: 700;
+}
+
+.btn-secondary:hover {
+  background-color: var(--brown-700);
+  color: var(--white);
+}
+
+.btn-secondary:hover a {
+  color: var(--white);
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--white);
+  color: var(--brown-600);
+  font-weight: bold;
+  padding: 1rem 2.5rem;
+  border-radius: 9999px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+  animation: bounce 2s infinite;
+}
+
+.btn-whatsapp:hover {
+  background-color: var(--brown-200);
+}
+
+.btn-whatsapp i {
+  margin-right: 0.75rem;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+.product-button {
+  width: 100%;
+  background: var(--pink-600);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.product-button:hover {
+  background: var(--brown-500);
+}
+
+.product-button i {
+  font-size: 1rem;
+}
+
+.validation__button {
+  display: flex;
+  max-width: 420px;
+  width: 100%;
+}
+
+.validation__button-item {
+  width: 100%;
+  border-radius: 40px;
+  background-color: var(--pink-500);
+  text-decoration: none;
+  padding: 15px 30px;
+  text-align: center;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 17px;
+  transition: transform 0.4s;
+}
+
+.validation__button-item:hover{
+  transform: scale(1.06);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}

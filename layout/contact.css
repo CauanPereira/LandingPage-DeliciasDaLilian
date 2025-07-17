@@ -1,0 +1,13 @@
+/* --- LAYOUT: CONTATO --- */
+
+#contato.contact-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--pink-50), var(--brown-50));
+  text-align: center;
+}
+
+#contato .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}

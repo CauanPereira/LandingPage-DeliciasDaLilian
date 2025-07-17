@@ -1,0 +1,84 @@
+/* --- COMPONENT: HEADER CONTENT --- */
+
+.nav-brand a {
+  font-family: var(--font-brand);
+  font-size: 2.25rem;
+  color: var(--pink-500);
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--pink-500);
+}
+
+.btn-encomenda {
+  background: var(--pink-500);
+  color: var(--white);
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: transform 0.4s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-encomenda:hover {
+ 
+  transform: scale(1.06);
+}
+
+.mobile-menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu-button i {
+  font-size: 1.8rem;
+  color: var(--pink-500);
+}
+
+.mobile-menu {
+  display: none;
+  background-color: var(--white);
+  padding-bottom: 0.5rem;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 0.5rem 1.5rem;
+  color: var(--gray-600);
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  background-color: var(--brown-50);
+}
+
+.btn-encomenda-mobile {
+  margin: 0.5rem 1rem;
+  background: linear-gradient(
+    135deg,
+    var(--pink-500) 0%,
+    var(--brown-500) 100%
+  );
+  color: var(--white);
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+}
+
+.btn-encomenda-mobile:hover {
+  background: linear-gradient(
+    135deg,
+    var(--pink-600) 0%,
+    var(--brown-600) 100%
+  );
+}

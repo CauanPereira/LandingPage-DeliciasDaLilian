@@ -1,0 +1,75 @@
+/* --- COMPONENTES: CONTATO --- */
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--brown-600);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+  color: var(--gray-600);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.contact-text {
+  font-size: 1rem;
+  color: var(--gray-600);
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.social-links p {
+  color: var(--gray-600);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: var(--pink-500);
+  color: var(--white);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  background: var(--brown-600);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.3);
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .contact-text {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+}

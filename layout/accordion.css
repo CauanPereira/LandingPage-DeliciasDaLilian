@@ -1,0 +1,26 @@
+/* --- LAYOUT: FAQ & LOCATION --- */
+
+.section__faq {
+  background-color: var(--white);
+  padding: 4rem 0;
+}
+
+.section__faq .section-title {
+  color: var(--brown-700);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section__faq  .section-subtitle {
+
+  color: var(--pink-500);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.faq-grid{
+
+    display: flex;
+}

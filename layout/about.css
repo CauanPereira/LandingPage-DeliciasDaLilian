@@ -1,0 +1,99 @@
+/* --- LAYOUT: ABOUT --- */
+
+.about {
+  background: var(--white);
+  padding: 50px 20px;
+}
+
+.about .container {
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.about-biography-text {
+  width: 100%;
+}
+
+.about-text {
+  text-align: center;
+}
+
+.about-biography-grid {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-biography-image-col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.about-biography-cards {
+  position: absolute;
+  left: 20%;
+  bottom: -30%;
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(190, 24, 93, 0.1);
+  padding: 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 70%;
+  z-index: 10;
+  height:auto;
+}
+
+
+
+@media(max-width:1070px){
+
+  .about .container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .about-biography-cards {
+    bottom: -20%;
+    left: 40%;
+  }
+}
+
+@media(max-width:768px){
+
+  .about-biography-cards {
+    bottom: -20%;
+    left: 20%;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .about-biography-cards {
+    bottom: -20%;
+    left: 10%;
+  }
+}
+
+@media(max-width:530px){
+
+  .about-biography-cards {
+    grid-template-columns: repeat(4, 4fr);
+
+  }
+}
+
+
+

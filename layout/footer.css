@@ -1,0 +1,14 @@
+/* --- LAYOUT: FOOTER --- */
+
+.main-footer {
+  background-color: var(--brown-600);
+  color: var(--white);
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.footer-dev {
+  font-size: 0.875rem;
+  color: var(--brown-200);
+  margin-top: 0.25rem;
+}

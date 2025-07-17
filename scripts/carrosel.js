@@ -1,35 +1,45 @@
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2,
-  spaceBetween: 30,
-  loop: true,
+const swiper = new Swiper(".mySwiper", { // Certifique-se que a classe é a mesma do seu HTML
+  // Configurações Gerais
+  loop: true, // Habilita o loop infinito
   autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-    reverseDirection: false,
+      delay: 5000,
+      disableOnInteraction: false,
   },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
+  
+  // Navegação
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
   },
 
-  autoHeight: false,
-  watchSlidesProgress: true,
-  watchSlidesVisibility: true,
+  // Paginação
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
+
+  // --- PONTO CHAVE DA RESPONSIVIDADE ---
+  // Define quantos slides e qual o espaçamento em diferentes tamanhos de tela
+  
+  slidesPerView: 1, // Padrão para telas pequenas (mobile-first)
+  spaceBetween: 20,
 
   breakpoints: {
+
     320: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
 
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 25,
+    500: {
+      slidesPerView: 1,
+      spaceBetween: 20,
     },
+
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 25,
+      
+    }
   },
 });

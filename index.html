@@ -12,24 +12,20 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Font Awesome (Ícones) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
-    <!-- Swiper JS (Carrossel) -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <!-- Nosso Arquivo de Estilo -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <!-- CABEÇALHO E NAVEGAÇÃO -->
@@ -39,8 +35,10 @@
           <a href="#">Delícias da Lilian</a>
         </div>
         <div class="nav-links">
+          <a href="#inicio">Início</a>
           <a href="#produtos">Produtos</a>
           <a href="#sazonais">Datas Especiais</a>
+          <a href="#tabelas-produtos">Opções</a>
           <a href="#sobre">Sobre</a>
           <a href="#contato">Contato</a>
         </div>
@@ -51,8 +49,10 @@
       </nav>
       <!-- Menu Dropdown Mobile -->
       <div id="mobile-menu" class="mobile-menu">
+        <a href="#inicio">Início</a>
         <a href="#produtos">Produtos</a>
         <a href="#sazonais">Datas Especiais</a>
+        <a href="#tabelas-produtos">Opções</a>
         <a href="#sobre">Sobre</a>
         <a href="#contato">Contato</a>
         <a href="#contato" class="btn-encomenda-mobile"> Fazer Encomenda </a>
@@ -131,23 +131,11 @@
                 >
               </div>
               <h1 class="hero-title">
-                Doces feitos com
+                Transforme sua celebração 
                 <span class="hero-title--highlight"
-                  >amor
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="hero-heart"
-                  >
-                    <path
-                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
-                    ></path>
-                  </svg>
+                  > e a de quem você ama em uma experiência inesquecível.
                 </span>
-                <br />e dedicação
+
               </h1>
               <p class="hero-desc">
                 Bem-vindos à Confeitaria Lilian! Criamos doces artesanais
@@ -161,12 +149,11 @@
                 </button>
 
                 <button class="btn-secondary">
-                  <a href="#contato" 
-                    >Falar com a Lilian</a>
+                  <a href="#contato">Falar com a Lilian</a>
                 </button>
               </div>
             </div>
-            <div class="hero-image-block">
+          
               <div class="hero-image-wrapper">
                 <img
                   src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -174,146 +161,320 @@
                   class="hero-image"
                 />
                 <div class="hero-badge hero-badge--top-left">
-                  <span class="hero-badge-number">10+</span>
+                  <span class="hero-badge-number">4+</span>
                   <p class="hero-badge-label">Anos de<br />Experiência</p>
                 </div>
                 <div class="hero-badge hero-badge--bottom-right">
                   <span class="hero-badge-number">100%</span>
+                  <br>
                   <span class="hero-badge-label">Artesanal</span>
                 </div>
               </div>
+           
+          </div>
+        </div>
+      </section>
+
+      <!--SESSÃO DE VALIDAÇÃO-->
+      <section class="validation">
+        <div class="validation__conatiner">
+          <div class="validation__description">
+            <div class="validation__item">
+              <h1 class="validation__idea-1">
+                A ideia <span class="validation__pink"> é sua,</span> o projeto
+                <span class="validation__pink">é nosso.</span>
+              </h1>
+              <p class="validation__paragraph">
+                <span class="validation__negrito">Aqui cada bolo e doce personalizado è pensado para ser mais do
+                que uma sobremesa:</span> é um presente, uma lembrança e uma
+                experiência única.
+              </p>
             </div>
+            <div class="validation__item">
+              <p class="validation__paragraph">
+                Trabalhamos com você para escolher sabor, decorações e
+                acabamentos que refletem a sua essência e do momento que você
+                deseja celebrar.
+              </p>
+              <p class="validation__paragraph">
+                Seja para surpreender alguém especial ou para transformar o seu
+                dia em algo extraordinário, garantimos exclusividade e alta
+                qualidade em cada detalhe.
+              </p>
+            </div>
+            <div class="validation__item background__pink">
+              <h2 class="validation__idea-2">
+                O que você encontrará nos nosSOS produtos:
+              </h2>
+            </div>
+          </div>
+          <div class="validation__authority">
+            
+            <div class="validation__image">
+
+              <img
+              class="validation__item-img"
+              src="./images/Produto__Bolo-autoridade.jpg"
+              alt=""
+            />
+            </div>
+             
+              <div class="validation__attributes">
+
+                <div class="validation__item-att">
+                  <i class="fa-regular fa-star validation__star" style="color: #ffffff;"></i>
+                  <h3 class="validation__title">
+                    Exclusividade
+                  </h3>
+                  <p class="validation__paragraph-att">
+                    Aqui cada bolo e doce personalizado é pensado para ser mais do que uma sobremesa: é um presente, uma lembrança e uma experiência única.
+                  </p>
+                </div>
+                <div class="validation__item-att">
+                  <img class="validation__diamond" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGjElEQVR4nO1aCXMURRTen8cC4oGilFqFxhvxwHiWpeJZijcWQmJAQoAQyEG4QwBDFMFwhyuREG4MzOzO7uzu7Owcz3qvp3tmdmeSPWYDWHZVV2Wn33S/r/v1+957k5g0YyX8F3rsTivwP5AZEZyIPG8NmOMyRN3McRnkuaunx7Tkh1aDMXIL6tWM8xMgP7iqvkDk+1vAOH1TLKofvhwsO7sZCkeukox1M00dGz7DsaB3cC7eCieugzynpU5AULmhK+Bt2TVDpXLxJtAHLtC4lcxBsqEdkk9tAEvO0jP94DhIs0rBZFuHfHMXjl4F+b5fIgYyq5kU4MpZUob+Tr23vURW236Wxux0HpIvbBLPky9uAlvN05i24yxIcf97OBc263bGBT04BtLMpoiAxJsgv+9vmtjO6KC82g22bgDYAPLDv/pkc+3HmVzeAOWNLSVz0bu5AsnkNh73m+3c1QC2DbZugrKwE+yURnL5/lHSoTYgcc8OO8opizrpt3kl6ZPNLP+DnoNhQer9HaFzpt7ZBnbBJNFsyyHfmHklSc+VlztBeWmzOMH87vMlJ1gRkNymEwyEbkDq7a1M4Z8G2eR9I0JOXbqPTggsG9Kf7Zly99JLdgOYFr2T+eGAeJ7vG6G5M8sG2Qm+3iNOUOs+VR2Q3LqjYofTH+x0F+v3L5b+aJdQSv1+oOzLqX69n4G3bUh/3s82admgewL8BN/dRuZGJ9g6VBmQzArHTCx3EXH8V53jX9hJpyQWaf6zbBAl6zjmqCx0zHZcDj7BAHMMBaJ++5uzUwDqdwMhF9IAZbF77Hh6lYIQJ9/hOojUm71ga+hIbCJen15fofnazBwdawgFwmw9XFi4SCkrvIrWe7pqEMKh7DzHwKTzwvWm3tpaeoI/HhDmiMACgfiP73DgosWkhW65HNc4NRiXRHkL08Fv9nv8QHCnuUuczEz0v9wwQj90KTTcqKoXRQ764EWoxBHFUo29jODu0WYjNTT2QgzZFpHds82wKGKIeUmOhwdhR5pZcZDk0AQiM6miXnCiZrzYYTIYw6GXIznHKcWKWdW8ngpNbjBPsLM6eY7ksxsjB5FsaGfuPaOD/EBLqA48lCFnU+y1MP43Ltx2L3JIbKNtGSYZbeuZyIFo287Q3BgaBcrEV5IToA2/KFN+VAKEduTpDbQbk7k/lKFdyxsgP+KPfmvpaAU2EqxlQ2LB+kCZ7KrD7ApkdMpxJmX29Ie7BOkE5RvebK6asCSs41yTuV0Mh3hMl/54d3mxFuYKPIlKPNEWzvATamC2V3Gf2STS4VRjb8l4Yv5awfi5DccqiH7jTZRqYjPOTQQSH6+ipD/pqxlI+tM+ttaYVDo+u1nUCQrHr4VmjKFhfOKxVko7sWk9w8FxD04+fKNmIIVhpqj6zf5Q52LdUiHx6JrqEisvWapL/Yugx+CBo7Koq2oQPHS3FA3kOf5ig/pFv0t6i3tqy9kzy3+nuTC8Tj7fERiCe7PFSnt+D+Ov3Hp/jJd8ZqNIEyYjx7KBeBczryk+skw83ka7hQFnYn5rxSDQVCgxMyyfU5FDSK9mID6yxLqUhyz1A2NTpqFhnacFPmXj7pzFpFczEDrqhnaXLD38oSzewmxczlYW1s9uFvUxvIvFfGKr+RLSiwSIKDQgWZoWpaX8Oa8Fq1/uLXsuSl3xHo/e8mxKD3MuSHpLSkkvMiDYcx2sRGQlcnRHRIpMSt0uex4sVnvB4x2zpGzVNYDKPyvM9JDl2X+YOaGZJJgSU7nJQHOc1Ux8NBXpRQuEk6Vj31rnSWbba4/Qb31gbMr3hYNwiuBa1ykR8sjzwkkvciC0q6+5ZIlFAARHrtS0IPHkuvBNKHLZVPTAwk3BBOWVrjvzDTHzM6toIHEln+sQVcjiAnUYiZInxEQNSa+CKqUUNRDsXHmsQKInI2BqPjDDQz7iYQ3KmpcTDNTe0Zp0kKIAggqbl5hCWJvikWrQDmPBmi708A36XMAj3nJJT6onkGKy5EAQXHG6jEztlSHSW1A+6Un1BiJyCiez5A2/hfBx/Fs0Ksvavir/XQNEwou8+aSrLC9iOGP6IbdKSQ6h7Uhk60qR/+cDEtupG56dB/Yx1ClY8FY4Vh3pSdMGRIQajCyJMLuHKcPkrRbSk6YTCHb81sjJEnmCcwVVMmvIJqXpBuItr3pb8YejewKIRGTJuEJ8Zq7jWrF6To4pK94J82aq4n/JkO4mINjJazW013UNBPIviDj19zk+hQMAAAAASUVORK5CYII=" alt="diamond--v1">
+                  <h3 class="validation__title">Elegância:</h3>
+                  <p class="validation__paragraph-att">
+                    Design sofisticado para encantar todos os convidados e familiares à primeira vista.
+                  </p>
+                </div>
+                <div  class="validation__item-att">
+                  <img class="validation__king" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD5klEQVR4nO2Y20/TUBzH9+cN8IYmGgTkovGNJ0lMiA/6ojGaaHzRDcYlA6YYSNCAoBgcSLgEFIOAKFMnGIi0p7t267r1Z37nrB2wWzcgpbqTnGQ5PW2/n/O7dhbOaoN/YVqMFlACsZYsYjPcfbhSjFiLPyFS0w3SpAcUMUan9P47CJefmssipKYblEAU9g9cI9Xd5gGRJj1UuDTjpcJxSrNetub2mAdEEWNU9O7TJ7U9zCohyUQgIYmKFhpcKZC6XvOBSG7mWrGPm0CqnDTI8TdzrXXzgJC6XkgIYlqw4xpeMw0If8YBiZ0Qc6WoDIok09/x337gTrSaB0TsWaDC5fUd4MrswJXbIf6Dp2thx4w5QEhtD7UCDn/zC23df/0ls5AYA3LReXQg5JAqsRromYJamv5Jr0VHvxR+QDW59VkOsxKjBeh9kgzkUk/adaHRBSAnABQFfE0DBUEoefRZDq0Sl9tpTODAGMm2T3y+yOJneRu4Mp1Wnsyvz3JYlTj00M1S7J8g8KcdWffxZzsgQVhqDt59q+vZig59DCTMKjGaUHODBhcTRsJ5X8Sf69Dqhh5xwQdJ6J0QTdX59idImHUKja7cIFqAznopDJLH5jfYy7YCIFx5lvNFkf5PhblLmR3kb/ndkMO4uzGsWTC2sMH0YeDPMdeKvlvfF+z+SFowpUqyAtGxrxmzGK4VE8C+a4MASvbE4G8ZAnllO7smtIY/sjfYKQwGkNujuRnWAn/zIERHVplQDWhtD5AadMWkVEzR1BMmPHsBllMA6LLh1mkQrvZp9Qk14r2k2pmjIJbZte5VpRXqXVSoBhRPQPTNGoQeTaSKXFXhRQ4tobYvKFZe3koB+CIQbpvRYgi1aDGB3YKeyq76X+D2WNqLI8MrFGT3OEjbobYzu91F7J6n2W1PgrgzpsVxpudkBAl3ztGbIoNLGW/CjBZ9vUaB4hsC8CfbigbBVB33EgoQdswCX9mecR9qoYfWOacfRK3QmFlyuka1k6beYiG0qaMjlpNZbnf/lheEP+Vg8ZBQ0kxsxOQr26kW1ITadIPQE0imPswiRoP4W4ZSdSrLHku+nggDz2gQMZkQxL7FwkECt0ZZNf2waThILPm9H7g5UjgIf76LVd6IDFzF0Xye6poVraxpVADIha7CQXDGfwn0JHxN/YaB+JoGWA32kpz7coJEXq3Sh4QeTxkGEnoyxWra8ErxIMH740f6N6eeKU2wzjx4b7x4EPWb5DgMod5VPAjO4zK4PDp1gxjlWuoogXAli9iOt2sZPbiDgsifU5+fRo3Y0tbBQcwyLUYLKIFYSxaxGe4+3P8QI38Bceg0kESO/u4AAAAASUVORK5CYII=" alt="crown">
+                  <h3 class="validation__title">
+                    Qualidade Premium:
+                  </h3>
+                  <p class="validation__paragraph-att">Ingredientes especialmente selecionados e sabores únicos.</p>
+                </div>
+                <div class="validation__button">
+                  <a class="validation__button-item" href="#contato">Quero fazer uma encomenda</a>
+                </div>
+                
+              </div>
+
+              </div>
+           
           </div>
         </div>
       </section>
 
       <!-- SEÇÃO DE PRODUTOS PRINCIPAIS -->
-      <section id="produtos" class="section">
+      <section id="produtos" class="section blue">
         <div class="container">
           <h2 class="section-title">Nossas Delícias</h2>
           <p class="section-subtitle">Feitas para você</p>
-          <div class="product-grid">
-            <!-- Produto 1: Bolos -->
-            <div class="product-card">
-              <img
-                src="https://placehold.co/600x400/f871b5/ffffff?text=Bolos+Decorados"
-                onerror="this.onerror=null;this.src='https://placehold.co/600x400/f871b5/ffffff?text=Bolos';"
-                alt="Imagem de um bolo decorado para festas"
-              />
-              <div class="product-card-content">
-                <h3>Bolos Festivos</h3>
-                <p>
-                  Bolos personalizados para aniversários, casamentos e todas as
-                  ocasiões. Sabores incríveis e decorações que encantam.
-                </p>
+          <div class="products-grid">
+            <div class="product-content-1">
+                <!-- Produto 1: Bolos Personalizados -->
+                <div class="product-card-new">
+                  <div class="product-image-container">
+                  <img
+                    src="./images/Produto__bolo1.png"
+                      alt="Bolos Personalizados"
+                      class="product-image"
+                    />
+                    <div class="product-icon">
+                      <i class="fas fa-birthday-cake"></i>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-title">Bolos Personalizados</h3>
+                    <p class="product-description">
+                      Bolos únicos para suas celebrações especiais. Sabores variados e decoração personalizada.
+                    </p>
+                    <ul class="product-features">
+                      <li class="feature-item">
+                        <div class="feature-dot"></div>
+                        Massa fresquinha
+                      </li>
+                      <li class="feature-item">
+                        <div class="feature-dot"></div>
+                        Recheios variados
+                      </li>
+                      <li class="feature-item">
+                        <div class="feature-dot"></div>
+                        Decoração personalizada
+                      </li>
+                    </ul>
+                    <button class="product-button">
+                      <i class="fas fa-shopping-cart"></i>
+                      Fazer Pedido
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Produto 2: Trufas Gourmet -->
+                <div class="product-card-new">
+                  <div class="product-image-container">
+                    <img
+                      src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                      alt="Trufas Gourmet"
+                      class="product-image"
+                    />
+                    <div class="product-icon">
+                      <i class="fas fa-cookie-bite"></i>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-title">Trufas Gourmet</h3>
+                    <p class="product-description">
+                      Trufas artesanais com chocolate belga <br> e recheios especiais que derretem na boca.
+                    </p>
+                    <ul class="product-features">
+                      <li class="feature-item">
+                        <div class="feature-dot"></div>
+                        Chocolate belga
+                      </li>
+                      <li class="feature-item">
+                        <div class="feature-dot"></div>
+                        Recheios especiais
+                      </li>
+                      <li class="feature-item">
+                        <div class="feature-dot"></div>
+                        Embalagem elegante
+                      </li>
+                    </ul>
+                    <button class="product-button">
+                      <i class="fas fa-shopping-cart"></i>
+                      Fazer Pedido
+                    </button>
+                  </div>
+                </div>
+            </div>
+
+            <div class="product-content-2">
+               <!-- Produto 3: Brigadeiros Premium -->
+                  <div class="product-card-new">
+                    <div class="product-image-container">
+                      <img
+                        src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        alt="Brigadeiros Premium"
+                        class="product-image"
+                      />
+                      <div class="product-icon">
+                        <i class="fas fa-candy-cane"></i>
+                      </div>
+                    </div>
+                    <div class="product-content">
+                      <h3 class="product-title">Brigadeiros Premium</h3>
+                      <p class="product-description">
+                        O docinho brasileiro mais amado, feito com chocolate nobre e coberturas especiais.
+                      </p>
+                      <ul class="product-features">
+                        <li class="feature-item">
+                          <div class="feature-dot"></div>
+                          Chocolate nobre
+                        </li>
+                        <li class="feature-item">
+                          <div class="feature-dot"></div>
+                          Coberturas variadas
+                        </li>
+                        <li class="feature-item">
+                          <div class="feature-dot"></div>
+                          Receita tradicional
+                        </li>
+                      </ul>
+                      <button class="product-button pad-top">
+                        <i class="fas fa-shopping-cart"></i>
+                        Fazer Pedido
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Produto 4: Bolos no Pote -->
+                  <div class="product-card-new">
+                    <div class="product-image-container">
+                      <img
+                        src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        alt="Bolos no Pote"
+                        class="product-image"
+                      />
+                      <div class="product-icon">
+                        <i class="fas fa-mug-hot"></i>
+                      </div>
+                    </div>
+                    <div class="product-content">
+                      <h3 class="product-title">Bolos no Pote</h3>
+                      <p class="product-description">
+                        Praticidade e sabor em porções individuais. Perfeitos para presentear ou saborear.
+                      </p>
+                      <ul class="product-features">
+                        <li class="feature-item">
+                          <div class="feature-dot"></div>
+                          Porções individuais
+                        </li>
+                        <li class="feature-item">
+                          <div class="feature-dot"></div>
+                          Fácil transporte
+                        </li>
+                        <li class="feature-item">
+                          <div class="feature-dot"></div>
+                          Sabores variados
+                        </li>
+                      </ul>
+                      <button class="product-button pad-top">
+                        <i class="fas fa-shopping-cart"></i>
+                        Fazer Pedido
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- Produto 2: Doces Finos -->
-            <div class="product-card">
-              <img
-                src="https://placehold.co/600x400/a855f7/ffffff?text=Brigadeiros+e+Trufas"
-                onerror="this.onerror=null;this.src='https://placehold.co/600x400/a855f7/ffffff?text=Doces';"
-                alt="Imagem de brigadeiros gourmet e trufas variadas"
-              />
-              <div class="product-card-content">
-                <h3>Doces Finos</h3>
-                <p>
-                  Brigadeiros gourmet, trufas recheadas e outros doces que
-                  derretem na boca. Perfeitos para presentear ou para sua festa.
-                </p>
-              </div>
-            </div>
-            <!-- Produto 3: Bolos no Pote -->
-            <div class="product-card">
-              <img
-                src="https://placehold.co/600x400/84cc16/ffffff?text=Bolo+no+Pote"
-                onerror="this.onerror=null;this.src='https://placehold.co/600x400/84cc16/ffffff?text=Bolo+no+Pote';"
-                alt="Imagem de um delicioso bolo no pote com camadas"
-              />
-              <div class="product-card-content">
-                <h3>Bolo no Pote</h3>
-                <p>
-                  A combinação perfeita de massa fofinha e recheio cremoso em
-                  uma porção individual. Praticidade e muito sabor!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+           
       </section>
 
-      <!-- SEÇÃO DATAS COMEMORATIVAS -->
-      <section id="sazonais" class="section bg-light-pink">
-        <div class="container">
-          <h2 class="section-title">Celebre Datas Especiais</h2>
-          <p class="section-subtitle">Com doçura e afeto</p>
-          <div class="sazonais-grid">
-            <!-- Páscoa -->
-            <div class="sazonal-card">
-              <i class="fas fa-egg icon-pascoa"></i>
-              <h3>Páscoa</h3>
-              <p>
-                Ovos de colher e trufas recheadas com os sabores que você mais
-                ama. Uma Páscoa inesquecível!
-              </p>
-            </div>
-            <!-- Dia das Mães -->
-            <div class="sazonal-card">
-              <i class="fas fa-heart icon-maes"></i>
-              <h3>Dia das Mães</h3>
-              <p>
-                Cestas de café da manhã e bolos em formato de coração para
-                homenagear a mulher mais importante da sua vida.
-              </p>
-            </div>
-            <!-- Dia dos Namorados -->
-            <div class="sazonal-card">
-              <i class="fas fa-gift icon-namorados"></i>
-              <h3>Dia dos Namorados</h3>
-              <p>
-                Caixas com doces finos e sobremesas românticas para compartilhar
-                com seu amor.
-              </p>
-            </div>
-            <!-- Natal -->
-            <div class="sazonal-card">
-              <i class="fas fa-holly-berry icon-natal"></i>
-              <h3>Natal</h3>
-              <p>
-                Panetones trufados, chocotones e sobremesas especiais para a sua
-                ceia de Natal ser ainda mais feliz.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       <!-- SEÇÃO SOBRE -->
-      <section id="sobre" class="section">
-        <div class="about-container container">
-          <div class="about-image">
-            <img
-              src="https://placehold.co/500x500/fbcfe8/333333?text=Lilian"
-              onerror="this.onerror=null;this.src='https://placehold.co/500x500/fbcfe8/333333?text=Foto+da+Lilian';"
-              alt="Foto sorridente da confeiteira Lilian"
-            />
-          </div>
-          <div class="about-text">
-            <p class="section-subtitle">Feito com amor</p>
-            <h2 class="section-title">A paixão por trás de cada doce</h2>
-            <p>
-              Olá, eu sou a Lilian! Minha jornada na confeitaria começou como um
-              hobby, uma forma de expressar carinho pela minha família e amigos.
-              Essa paixão cresceu e hoje tenho o prazer de compartilhar minhas
-              criações com você.
-            </p>
-            <p>
-              Cada bolo, cada brigadeiro é feito com ingredientes selecionados
-              e, o mais importante, com muito amor e dedicação. Meu objetivo é
-              transformar seus momentos especiais em memórias doces e
-              inesquecíveis.
-            </p>
-          </div>
+      <section id="sobre" class="about">
+        <div class="container mx-auto">
+          
+            <div class="about-biography-text">
+              <div class="about-biography-highlight">Conheça a Lilian</div>
+              <h2 class="about-biography-title">Uma Paixão que Virou Profissão</h2>
+              <div>
+                <p class="about-biography-description">Olá! Eu sou a Lilian, e há mais de 10 anos transformo ingredientes simples em momentos especiais. Tudo começou como um hobby na minha cozinha, fazendo doces para a família e amigos.</p>
+                <p class="about-biography-description">O que me move é ver o sorriso das pessoas ao provarem meus doces. Cada receita é preparada com muito carinho, usando apenas ingredientes de qualidade e técnicas artesanais que aprendi ao longo dos anos.</p>
+                <p class="about-biography-description">Na Confeitaria Lilian, acreditamos que cada doce conta uma história e marca um momento especial na vida das pessoas. É por isso que colocamos tanto amor em cada criação.</p>
+              </div>
+              <div class="about-biography-quote">
+                <h3>"Cada doce é feito como se fosse para minha própria família"</h3>
+                <p>- Lilian, Confeiteira</p>
+              </div>
+            </div>
+            <div class="about-biography-image-col">
+              <img src="./images/perfil.jpeg" alt="Lilian na confeitaria" class="about-biography-img" />
+              <div class="about-biography-cards">
+                <div class="about-biography-card">
+                  <div class="about-biography-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  </div>
+                  <div class="about-biography-card-title">4+</div>
+                  <div class="about-biography-card-desc">Anos de Experiência</div>
+                </div>
+                <div class="about-biography-card">
+                  <div class="about-biography-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  </div>
+                  <div class="about-biography-card-title">500+</div>
+                  <div class="about-biography-card-desc">Clientes Satisfeitos</div>
+                </div>
+                <div class="about-biography-card">
+                  <div class="about-biography-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>
+                  </div>
+                  <div class="about-biography-card-title">100%</div>
+                  <div class="about-biography-card-desc">Ingredientes Selecionados</div>
+                </div>
+                <div class="about-biography-card">
+                  <div class="about-biography-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+                  </div>
+                  <div class="about-biography-card-title">∞</div>
+                  <div class="about-biography-card-desc">Amor em Cada Doce</div>
+                </div>
+              </div>
+            </div>
+          
         </div>
       </section>
 
@@ -334,75 +495,23 @@
               em grandes lembranças inesquecíveis .
             </p>
           </div>
+          
+          <!-- Carrossel Swiper -->
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <!-- Card 1 -->
+              <!-- Slide 1 -->
               <div class="swiper-slide">
+                <div class="clients__verification-badge">
+                  <i class="fas fa-check-circle"></i>
+                  Verificado
+                </div>
                 <div class="clients__person">
                   <div class="clients__person-details">
-                    <img
-                      class="clients__profile-image"
-                      src="https://placehold.co/48x48/ec4899/ffffff?text=R"
-                      onerror="this.onerror=null;this.src='https://placehold.co/48x48/ec4899/ffffff?text=R';"
-                      alt="Foto do cliente Rogério Vieira"
-                    />
-                    <div class="clients__person-text">
-                      <span class="clients__person-name">Rogerio Vieira</span>
-                      <span class="clients__person-date">12.Agosto. 2022</span>
-                    </div>
-                  </div>
-                  <div>
-                    <img
-                      src="https://placehold.co/24x24/4285f4/ffffff?text=G"
-                      alt="Ícone do Google"
-                    />
-                  </div>
-                </div>
-                <div class="clients__review">
-                  <div class="clients__review-icons">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <img
-                      class="clients__confere"
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg=="
-                      alt="instagram-check-mark"
-                    />
-                  </div>
-                  <div class="clients__review-content">
-                    <p class="clients__review-text">
-                      "Com a AKAME, meu rendimento pessoal alcançou resultados
-                      incríveis. Recomendo seus serviços para ajudar qualquer
-                      pessoa a se organizar."
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 2 -->
-              <div class="swiper-slide">
-                <div class="clients__person">
-                  <div class="clients__person-details">
-                    <img
-                      class="clients__profile-image"
-                      src="https://placehold.co/48x48/ec4899/ffffff?text=M"
-                      onerror="this.onerror=null;this.src='https://placehold.co/48x48/ec4899/ffffff?text=M';"
-                      alt="Foto da cliente Maria Silva"
-                    />
+                    <img class="clients__profile-image" src="./images/perfil.jpeg" alt="Maria Silva">
                     <div class="clients__person-text">
                       <span class="clients__person-name">Maria Silva</span>
-                      <span class="clients__person-date"
-                        >15.Setembro. 2022</span
-                      >
+                      <span class="clients__person-date">15.Setembro. 2022</span>
                     </div>
-                  </div>
-                  <div>
-                    <img
-                      src="https://placehold.co/24x24/4285f4/ffffff?text=G"
-                      alt="Ícone do Google"
-                    />
                   </div>
                 </div>
                 <div class="clients__review">
@@ -412,43 +521,30 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <img
-                      class="clients__confere"
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg=="
-                      alt="instagram-check-mark"
-                    />
+                    <img class="clients__confere" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg==" alt="instagram-check-mark">
                   </div>
                   <div class="clients__review-content">
                     <p class="clients__review-text">
-                      "A AKAME transformou meus projetos, aumentando minha
-                      produtividade e gerando resultados reais. Estou muito
-                      satisfeita."
+                      A Confeitaria Lilian transformou meu aniversário em uma experiência mágica. O bolo estava perfeito e delicioso. Recomendo muito!
                     </p>
                   </div>
                 </div>
               </div>
 
-              <!-- Card 3 -->
+              <!-- Slide 2 -->
               <div class="swiper-slide">
+                <div class="clients__verification-badge">
+                  <i class="fas fa-check-circle"></i>
+                  Verificado
+                </div>
                 <div class="clients__person">
                   <div class="clients__person-details">
-                    <img
-                      class="clients__profile-image"
-                      src="https://placehold.co/48x48/ec4899/ffffff?text=P"
-                      onerror="this.onerror=null;this.src='https://placehold.co/48x48/ec4899/ffffff?text=P';"
-                      alt="Foto do cliente Pedro Santos"
-                    />
+                    <img class="clients__profile-image" src="./images/perfil.jpeg" alt="Pedro Santos">
                     <div class="clients__person-text">
                       <span class="clients__person-name">Pedro Santos</span>
                       <span class="clients__person-date">3.Outubro. 2022</span>
                     </div>
                   </div>
-                  <div>
-                    <img
-                      src="https://placehold.co/24x24/4285f4/ffffff?text=G"
-                      alt="Ícone do Google"
-                    />
-                  </div>
                 </div>
                 <div class="clients__review">
                   <div class="clients__review-icons">
@@ -457,42 +553,29 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <img
-                      class="clients__confere"
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg=="
-                      alt="instagram-check-mark"
-                    />
+                    <img class="clients__confere" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg==" alt="instagram-check-mark">
                   </div>
                   <div class="clients__review-content">
                     <p class="clients__review-text">
-                      "Fantástico! A organização que a AKAME proporciona é
-                      impressionante. Minha produtividade aumentou
-                      significativamente."
+                      Fantástico! Os brigadeiros da Lilian são simplesmente incríveis. Minha esposa adorou o presente de aniversário. Qualidade excepcional!
                     </p>
                   </div>
                 </div>
               </div>
 
-              <!-- Card 4 -->
+              <!-- Slide 3 -->
               <div class="swiper-slide">
+                <div class="clients__verification-badge">
+                  <i class="fas fa-check-circle"></i>
+                  Verificado
+                </div>
                 <div class="clients__person">
                   <div class="clients__person-details">
-                    <img
-                      class="clients__profile-image"
-                      src="https://placehold.co/48x48/ec4899/ffffff?text=A"
-                      onerror="this.onerror=null;this.src='https://placehold.co/48x48/ec4899/ffffff?text=A';"
-                      alt="Foto da cliente Ana Costa"
-                    />
+                    <img class="clients__profile-image" src="./images/perfil.jpeg" alt="Ana Costa">
                     <div class="clients__person-text">
                       <span class="clients__person-name">Ana Costa</span>
                       <span class="clients__person-date">8.Novembro. 2022</span>
                     </div>
-                  </div>
-                  <div>
-                    <img
-                      src="https://placehold.co/24x24/4285f4/ffffff?text=G"
-                      alt="Ícone do Google"
-                    />
                   </div>
                 </div>
                 <div class="clients__review">
@@ -502,17 +585,43 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <img
-                      class="clients__confere"
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg=="
-                      alt="instagram-check-mark"
-                    />
+                    <img class="clients__confere" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg==" alt="instagram-check-mark">
                   </div>
                   <div class="clients__review-content">
                     <p class="clients__review-text">
-                      "A melhor decisão que tomei foi usar a AKAME. O sistema é
-                      intuitivo e me ajuda a manter tudo organizado de forma
-                      eficiente."
+                      A melhor decisão que tomei foi encomendar o bolo da minha filha na Confeitaria Lilian. O sistema é intuitivo e me ajuda a manter tudo organizado.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <div class="clients__verification-badge">
+                  <i class="fas fa-check-circle"></i>
+                  Verificado
+                </div>
+                <div class="clients__person">
+                  <div class="clients__person-details">
+                    <img class="clients__profile-image" src="./images/perfil.jpeg" alt="Rogério Vieira">
+                    <div class="clients__person-text">
+                      <span class="clients__person-name">Rogério Vieira</span>
+                      <span class="clients__person-date">12.Agosto. 2022</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="clients__review">
+                  <div class="clients__review-icons">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <img class="clients__confere" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ghIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg==" alt="instagram-check-mark">
+                  </div>
+                  <div class="clients__review-content">
+                    <p class="clients__review-text">
+                      Com a Confeitaria Lilian, minha festa de aniversário alcançou resultados incríveis. Recomendo seus serviços para qualquer celebração especial.
                     </p>
                   </div>
                 </div>
@@ -522,88 +631,582 @@
             <!-- Navegação -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/carrosel.js"></script>
+    <script src="./scripts/menu-mobile.js"></script>
+    <script src="./scripts/contact-faq.js"></script>
+
+
+       <!-- SEÇÃO DATAS COMEMORATIVAS -->
+       <section id="sazonais" class="section__sazonais">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2 class="section-title">Datas Comemorativas Especiais</h2>
+            <p class="section-subtitle">
+              Cada data especial merece um doce único. Criamos delícias personalizadas 
+              para tornar seus momentos ainda mais doces e memoráveis.
+            </p>
+          </div>
+          
+          <div class="commemorative-grid">
+            <div class="commemorative-group">
+                <!-- Dia das Mães -->
+                <div class="commemorative-card commemorative-card-maes">
+                  <div class="commemorative-image">
+                    <div class="commemorative-icon">
+                      <i class="fas fa-gift"></i>
+                    </div>
+                  </div>
+                  <div class="commemorative-content">
+                    <h3 class="commemorative-title">Dia das Mães</h3>
+                    <p class="commemorative-date">Segunda Domingo de Maio</p>
+                    <p class="commemorative-description">
+                      Cupcakes especiais decorados com flores de açúcar e mensagens carinhosas para homenagear a mamãe.
+                    </p>
+                    <div class="commemorative-specialty">
+                      <p class="specialty-label">Especialidade:</p>
+                      <p class="specialty-name">Cupcakes de Baunilha com Cobertura de Morango</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Dia dos Namorados -->
+                <div class="commemorative-card commemorative-card-namorados">
+                  <div class="commemorative-image">
+                    <div class="commemorative-icon">
+                      <i class="fas fa-gift"></i>
+                    </div>
+                  </div>
+                  <div class="commemorative-content">
+                    <h3 class="commemorative-title">Dia dos Namorados</h3>
+                    <p class="commemorative-date">12 de Junho</p>
+                    <p class="commemorative-description">
+                      Bombons artesanais em formato de coração, perfeitos para expressar todo seu amor.
+                    </p>
+                    <div class="commemorative-specialty">
+                      <p class="specialty-label">Especialidade:</p>
+                      <p class="specialty-name">Bombons de Chocolate Belga com Recheio Trufado</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="commemorative-group">
+               <!-- Natal -->
+                <div class="commemorative-card commemorative-card-natal">
+                  <div class="commemorative-image">
+                    <div class="commemorative-icon">
+                      <i class="fas fa-gift"></i>
+                    </div>
+                  </div>
+                  <div class="commemorative-content">
+                    <h3 class="commemorative-title">Natal</h3>
+                    <p class="commemorative-date">25 de Dezembro</p>
+                    <p class="commemorative-description">
+                      Panetones tradicionais e chocotones artesanais que trazem o verdadeiro sabor do Natal.
+                    </p>
+                    <div class="commemorative-specialty">
+                      <p class="specialty-label">Especialidade:</p>
+                      <p class="specialty-name">Panetone Artesanal com Frutas Cristalizadas</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Páscoa -->
+                <div class="commemorative-card commemorative-card-pascoa">
+                  <div class="commemorative-image">
+                    <div class="commemorative-icon">
+                      <i class="fas fa-gift"></i>
+                    </div>
+                  </div>
+                  <div class="commemorative-content">
+                    <h3 class="commemorative-title">Páscoa</h3>
+                    <p class="commemorative-date">Março/Abril</p>
+                    <p class="commemorative-description">
+                      Ovos de chocolate artesanais e coelhinhos de açúcar que despertam a alegria da Páscoa.
+                    </p>
+                    <div class="commemorative-specialty">
+                      <p class="specialty-label">Especialidade:</p>
+                      <p class="specialty-name">Ovos de Chocolate Meio Amargo com Brigadeiros</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          
+          <div class="text-center mt-12">
+            <p class="commemorative-cta-text">
+              Encomende com antecedência e garanta seu doce especial!
+            </p>
+            <a href="#contato" class="btn-commemorative">
+              Fazer Encomenda
+            </a>
           </div>
         </div>
       </section>
 
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="./scripts/carrosel.js"></script>
-
       <!-- GALERIA DE FOTOS -->
-      <section id="galeria" class="section">
+      <section id="galeria" class="section__gallery">
         <div class="container">
           <h2 class="section-title">Galeria de Delícias</h2>
           <p class="section-subtitle">Inspire-se</p>
           <div class="gallery-grid">
             <img
-              src="https://placehold.co/500x700/86198f/ffffff?text=Doce+1"
-              onerror="this.onerror=null;this.src='https://placehold.co/500x700/d63384/ffffff?text=Inspiração';"
-              alt="Imagem de doce"
+              src="./images/Produto__bolo1.png"
+              alt="Imagem de um bolo decorado para festas"
             />
             <img
-              src="https://placehold.co/500x500/be185d/ffffff?text=Doce+2"
-              onerror="this.onerror=null;this.src='https://placehold.co/500x500/d63384/ffffff?text=Inspiração';"
-              alt="Imagem de doce"
+              src="./images/Produto__bolo1.png"
+              alt="Imagem de um bolo decorado para festas"
             />
             <img
-              src="https://placehold.co/500x500/ef4444/ffffff?text=Doce+3"
-              onerror="this.onerror=null;this.src='https://placehold.co/500x500/d63384/ffffff?text=Inspiração';"
-              alt="Imagem de doce"
+              src="./images/Produto__bolo1.png"
+              alt="Imagem de um bolo decorado para festas"
             />
             <img
-              src="https://placehold.co/500x800/16a34a/ffffff?text=Doce+4"
-              onerror="this.onerror=null;this.src='https://placehold.co/500x800/d63384/ffffff?text=Inspiração';"
-              alt="Imagem de doce"
+              src="./images/Produto__bolo1.png"
+              alt="Imagem de um bolo decorado para festas"
             />
             <img
-              src="https://placehold.co/500x750/fb923c/ffffff?text=Doce+5"
-              onerror="this.onerror=null;this.src='https://placehold.co/500x750/d63384/ffffff?text=Inspiração';"
-              alt="Imagem de doce"
+              src="./images/Produto__bolo1.png"
+              alt="Imagem de um bolo decorado para festas"
             />
             <img
-              src="https://placehold.co/500x450/4f46e5/ffffff?text=Doce+6"
-              onerror="this.onerror=null;this.src='https://placehold.co/500x450/d63384/ffffff?text=Inspiração';"
-              alt="Imagem de doce"
+              src="./images/Produto__bolo1.png"
+              alt="Imagem de um bolo decorado para festas"
             />
             <img
-              src="https://placehold.co/500x600/ca8a04/ffffff?text=Doce+7"
-              onerror="this.onerror=null;this.src='https://placehold.co/500x600/d63384/ffffff?text=Inspiração';"
-              alt="Imagem de doce"
+              src="./images/Produto__bolo1.png"
+              alt="Imagem de um bolo decorado para festas"
             />
             <img
-              src="https://placehold.co/500x700/0d9488/ffffff?text=Doce+8"
-              onerror="this.onerror=null;this.src='https://placehold.co/500x700/d63384/ffffff?text=Inspiração';"
-              alt="Imagem de doce"
+              src="./images/Produto__bolo1.png"
+              alt="Imagem de um bolo decorado para festas"
+            />
+            <img
+            src="./images/Produto__bolo1.png"
+            alt="Imagem de um bolo decorado para festas"
+            />
+            <img
+            src="./images/Produto__bolo1.png"
+            alt="Imagem de um bolo decorado para festas"
+            />
+            <img
+            src="./images/Produto__bolo1.png"
+            alt="Imagem de um bolo decorado para festas"
+            />
+            <img
+            src="./images/Produto__bolo1.png"
+            alt="Imagem de um bolo decorado para festas"
+            />
+            <img
+            src="./images/Produto__bolo1.png"
+            alt="Imagem de um bolo decorado para festas"
+            />
+            <img
+            src="./images/Produto__bolo1.png"
+            alt="Imagem de um bolo decorado para festas"
+            />
+            <img
+            src="./images/Produto__bolo1.png"
+            alt="Imagem de um bolo decorado para festas"
             />
           </div>
         </div>
       </section>
 
-      <!-- SEÇÃO DE CONTATO E ENCOMENDAS -->
-      <section id="contato" class="contact-section">
+      <!-- SEÇÃO DE CARDS DE PRODUTOS -->
+      <section id="tabelas-produtos" class="section bg-light-pink">
         <div class="container">
-          <h2 class="contact-title">Vamos conversar?</h2>
-          <p class="contact-subtitle">
-            Faça sua encomenda e deixe seu evento mais doce!
-          </p>
-          <p class="contact-text">
-            Clique no botão abaixo para me chamar no WhatsApp. Vamos planejar
-            juntos os doces perfeitos para sua ocasião!
-          </p>
-          <a
-            href="https://api.whatsapp.com/send?phone=+55 77 9842-0884&text=Olá!%20Gostaria%20de%20fazer%20uma%20encomenda."
-            target="_blank"
-            class="btn-whatsapp"
-          >
-            <i class="fab fa-whatsapp"></i> Encomendar pelo WhatsApp
-          </a>
-          <div class="social-links">
-            <p>Me siga nas redes sociais!</p>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <h2 class="section-title">Nossas Opções</h2>
+          <p class="section-subtitle">Personalize seu bolo</p>
+          
+          <div class="product-cards-grid">
+            <!-- Card de Tamanhos -->
+            <div class="product-category-card">
+              <div class="category-header">
+                <div class="category-icon">
+                  <i class="fas fa-ruler-combined"></i>
+                </div>
+                <h3 class="category-title">Tamanhos</h3>
+                <p class="category-subtitle">Escolha o tamanho ideal para sua ocasião</p>
+              </div>
+              <div class="category-content">
+                <div class="product-cards-list">
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Pequeno</h4>
+                      <span class="product-price">R$ 45</span>
+                    </div>
+                    <p class="product-description">Perfeito para pequenas celebrações e encontros íntimos</p>
+                    <div class="product-features">
+                      <span class="product-feature">8-12 pessoas</span>
+                      <span class="product-feature">Ideal para família</span>
+                    </div>
+                  </div>
+                  
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Médio</h4>
+                      <span class="product-price">R$ 65</span>
+                    </div>
+                    <p class="product-description">Tamanho equilibrado para eventos moderados</p>
+                    <div class="product-features">
+                      <span class="product-feature">15-20 pessoas</span>
+                      <span class="product-feature">Festa em casa</span>
+                    </div>
+                  </div>
+                  
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Grande</h4>
+                      <span class="product-price">R$ 85</span>
+                    </div>
+                    <p class="product-description">Para celebrações maiores e eventos especiais</p>
+                    <div class="product-features">
+                      <span class="product-feature">25-30 pessoas</span>
+                      <span class="product-feature">Eventos corporativos</span>
+                    </div>
+                  </div>
+                  
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Extra Grande</h4>
+                      <span class="product-price">R$ 120</span>
+                    </div>
+                    <p class="product-description">Para grandes eventos e celebrações especiais</p>
+                    <div class="product-features">
+                      <span class="product-feature">35-45 pessoas</span>
+                      <span class="product-feature">Casamentos</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card de Recheios -->
+            <div class="product-category-card">
+              <div class="category-header">
+                <div class="category-icon">
+                  <i class="fas fa-layer-group"></i>
+                </div>
+                <h3 class="category-title">Recheios</h3>
+                <p class="category-subtitle">Sabores especiais para seu bolo</p>
+              </div>
+              <div class="category-content">
+                <div class="product-cards-list">
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Brigadeiro</h4>
+                      <span class="product-price">R$ 8</span>
+                    </div>
+                    <p class="product-description">Chocolate belga cremoso e irresistível</p>
+                    <div class="product-features">
+                      <span class="product-feature">Clássico</span>
+                      <span class="product-feature">Cremoso</span>
+                    </div>
+                  </div>
+                  
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Beijinho</h4>
+                      <span class="product-price">R$ 8</span>
+                    </div>
+                    <p class="product-description">Coco ralado com leite condensado</p>
+                    <div class="product-features">
+                      <span class="product-feature">Tropical</span>
+                      <span class="product-feature">Suave</span>
+                    </div>
+                  </div>
+                  
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Doce de Leite</h4>
+                      <span class="product-price">R$ 10</span>
+                    </div>
+                    <p class="product-description">Leite condensado caramelizado</p>
+                    <div class="product-features">
+                      <span class="product-feature">Tradicional</span>
+                      <span class="product-feature">Caramelizado</span>
+                    </div>
+                  </div>
+                  
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Morango</h4>
+                      <span class="product-price">R$ 12</span>
+                    </div>
+                    <p class="product-description">Geleia natural de morango</p>
+                    <div class="product-features">
+                      <span class="product-feature">Frutado</span>
+                      <span class="product-feature">Natural</span>
+                    </div>
+                  </div>
+                  
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Ninho</h4>
+                      <span class="product-price">R$ 10</span>
+                    </div>
+                    <p class="product-description">Creme de leite fresco e suave</p>
+                    <div class="product-features">
+                      <span class="product-feature">Cremoso</span>
+                      <span class="product-feature">Suave</span>
+                    </div>
+                  </div>
+                  
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Trufa</h4>
+                      <span class="product-price">R$ 15</span>
+                    </div>
+                    <p class="product-description">Chocolate nobre trufado</p>
+                    <div class="product-features">
+                      <span class="product-feature">Premium</span>
+                      <span class="product-feature">Elegante</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card de Massas -->
+            <div class="product-category-card">
+              <div class="category-header">
+                <div class="category-icon">
+                  <i class="fas fa-birthday-cake"></i>
+                </div>
+                <h3 class="category-title">Massas</h3>
+                <p class="category-subtitle">Base perfeita para seu bolo</p>
+              </div>
+              <div class="category-content">
+                <div class="product-cards-list">
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Chocolate</h4>
+                      <span class="product-price">R$ 5</span>
+                    </div>
+                    <p class="product-description">Cacau premium belga de alta qualidade</p>
+                    <div class="product-features">
+                      <span class="product-feature">Premium</span>
+                      <span class="product-feature">Intenso</span>
+                    </div>
+                  </div>
+                  
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Baunilha</h4>
+                      <span class="product-price">R$ 3</span>
+                    </div>
+                    <p class="product-description">Extrato natural de baunilha</p>
+                    <div class="product-features">
+                      <span class="product-feature">Clássico</span>
+                      <span class="product-feature">Natural</span>
+                    </div>
+                  </div>
+                  
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Red Velvet</h4>
+                      <span class="product-price">R$ 8</span>
+                    </div>
+                    <p class="product-description">Massa vermelha com cacau suave</p>
+                    <div class="product-features">
+                      <span class="product-feature">Elegante</span>
+                      <span class="product-feature">Especial</span>
+                    </div>
+                  </div>
+                  
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Cenoura</h4>
+                      <span class="product-price">R$ 6</span>
+                    </div>
+                    <p class="product-description">Cenoura ralada fresca e nutritiva</p>
+                    <div class="product-features">
+                      <span class="product-feature">Saudável</span>
+                      <span class="product-feature">Fresco</span>
+                    </div>
+                  </div>
+                  
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Limão</h4>
+                      <span class="product-price">R$ 5</span>
+                    </div>
+                    <p class="product-description">Raspas e suco de limão fresco</p>
+                    <div class="product-features">
+                      <span class="product-feature">Cítrico</span>
+                      <span class="product-feature">Refrescante</span>
+                    </div>
+                  </div>
+                  
+                  <div class="product-card">
+                    <div class="product-card-header">
+                      <h4 class="product-name">Laranja</h4>
+                      <span class="product-price">R$ 5</span>
+                    </div>
+                    <p class="product-description">Raspas e suco de laranja natural</p>
+                    <div class="product-features">
+                      <span class="product-feature">Cítrico</span>
+                      <span class="product-feature">Aromático</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards-info">
+            <div class="info-card">
+              <i class="fas fa-info-circle"></i>
+              <p>Preços baseados no tamanho pequeno. Consulte valores para outros tamanhos.</p>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-clock"></i>
+              <p>Encomendas com 48h de antecedência para personalizações especiais.</p>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- SEÇÃO DE PERGUNTAS FREQUENTES -->
+      <section id="faq" class="section bg-light-pink">
+        <div class="container">
+          <h2 class="section-title">Perguntas Frequentes</h2>
+          <p class="section-subtitle">Tire suas dúvidas e entre em contato</p>
+          
+          <div class="faq-grid">
+            <!-- Container de Perguntas Frequentes -->
+            <div class="faq-container">
+              <h3 class="container-title">
+                <i class="fas fa-question-circle"></i>
+                Dúvidas Comuns
+              </h3>
+              
+              <div class="accordion">
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <h4>Qual o prazo mínimo para encomendas?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                  <div class="accordion-content">
+                    <p>Para personalizações especiais, recomendamos 48h de antecedência. Para bolos simples, aceitamos encomendas com 24h de antecedência.</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <h4>Vocês fazem entrega?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                  <div class="accordion-content">
+                    <p>Sim! Fazemos entrega em toda a região. O valor da entrega varia conforme a distância e será informado no momento da encomenda.</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <h4>Posso personalizar o bolo com fotos?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                  <div class="accordion-content">
+                    <p>Sim! Trabalhamos com decorações personalizadas, incluindo fotos comestíveis. Consulte-nos para mais detalhes sobre as opções disponíveis.</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <h4>Vocês trabalham com ingredientes especiais?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                  <div class="accordion-content">
+                    <p>Sim! Podemos adaptar receitas para dietas especiais (sem glúten, sem lactose, vegano). Informe-nos sobre suas necessidades.</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <h4>Como faço para encomendar?</h4>
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                  <div class="accordion-content">
+                    <p>Entre em contato pelo WhatsApp (77) 9842-0884 ou visite nossa loja. Vamos conversar sobre suas ideias e criar o bolo perfeito para sua ocasião!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Container de FAQ/Contato -->
+            <div class="accordion__faq">
+              <div class="accordion__elements">
+                <h1 class="accordion__description reveal visible">FAQ</h1>
+                <p class="accordion__title-1">Perguntas Frequentes</p>
+              </div>
+              <div class="accordion__content reveal visible">
+                <h1 class="accordion__title-2">
+                  Ainda ficou com alguma dúvida?
+                </h1>
+                <p class="accordion__title-3">
+                  Chame no WhatsApp, iremos te responder, <br>
+                  não é nenhuma assistente virtual, bot e <br>
+                  muito menos o estagiário.
+                </p>
+                <button class="button accordion__btn reveal visible">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  Chamar no WhatsApp
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO DE LOCALIZAÇÃO -->
+      <section id="location" class="location-section">
+        <h2 class="location-title">Localização</h2>
+        <p class="location-subtitle">Venha nos visitar e conhecer nossas instalações de perto!</p>
+        
+        <div class="location-content">
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3686.4423313006528!2d-44.28313102490137!3d-14.20983408623148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDEyJzM1LjQiUyA0NMKwMTYnNTAuMCJX!5e1!3m2!1spt-BR!2sbr!4v1751938377935!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="location-iframe"></iframe>
+          </div>
+          
+          <div class="location-info-container">
+            <div class="info-block">
+              <h3 class="info-title">Endereço:</h3>
+              <p class="info-text">Av. Presidente Castelo Branco - Centro Industrial, Guanambi - BA, 46430-000</p>
+            </div>
+            
+            <div class="info-block">
+              <h3 class="info-title">Entre em contato:</h3>
+              <p class="info-text"><span class="info-label">Telefone:</span> (77) 9 9900-9080</p>
+              <p class="info-text"><span class="info-label">E-mail:</span> comercial@eclipsepneus.com.br</p>
+            </div>
+            
+            <div class="info-block">
+              <h3 class="info-title">Horário de Funcionamento:</h3>
+              <p class="info-text"><span class="info-label">Segunda a Sexta:</span> das 7h30 às 12h e das 14h às 17h30</p>
+              <p class="info-text"><span class="info-label">Sábado e Domingo:</span> Fechado</p>
+            </div>
+            
+            <div class="info-block">
+              <a href="https://www.google.com/maps/place/14%C2%B012'35.4%22S+44%C2%B016'50.0%22W/@-14.2098341,-44.283131,847m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d-14.2098341!4d-44.2805561?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="location-btn">
+                COMO CHEGAR?
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+     
     </main>
 
     <!-- RODAPÉ -->
@@ -614,8 +1217,14 @@
       </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    
+    <!-- Scripts do projeto -->
+    <script src="./scripts/carrosel.js"></script>
+    <script src="./scripts/menu-mobile.js"></script>
+    <script src="./scripts/contact-faq.js"></script>
+    <script src="./scripts/swiper-init.js"></script>
+    <script src="./scripts/accordion.js"></script>
   </body>
 </html>
