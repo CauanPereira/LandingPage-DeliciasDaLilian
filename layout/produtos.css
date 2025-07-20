@@ -4,10 +4,14 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
+  
 }
 
 .blue {
   background: var(--brown-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .products-grid {
@@ -27,7 +31,7 @@
 
 /* Responsividade para produtos */
 
-@media (max-width: 700px) {
+@media (max-width: 824px) {
   .product-content-1, .product-content-2 {
     flex-direction: column;
   }

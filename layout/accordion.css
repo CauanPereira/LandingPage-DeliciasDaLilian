@@ -3,6 +3,8 @@
 .section__faq {
   background-color: var(--white);
   padding: 4rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 .section__faq .section-title {
@@ -23,4 +25,5 @@
 .faq-grid{
 
     display: flex;
+   
 }

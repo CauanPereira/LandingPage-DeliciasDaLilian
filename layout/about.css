@@ -3,6 +3,8 @@
 .about {
   background: var(--white);
   padding: 50px 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .about .container {

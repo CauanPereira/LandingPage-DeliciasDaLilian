@@ -1,5 +1,10 @@
 /* --- COMPONENTES: GALERIA --- */
 
+.section__gallery{
+  display: flex;
+  justify-content: center;
+}
+
 .section__gallery .section-subtitle {
   color: var(--brown-700);
 }

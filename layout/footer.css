@@ -5,6 +5,8 @@
   color: var(--white);
   padding: 1.5rem 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-dev {
