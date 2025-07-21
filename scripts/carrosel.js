@@ -31,7 +31,7 @@ const swiper = new Swiper(".mySwiper", { // Certifique-se que a classe é a mesm
       spaceBetween: 20,
     },
 
-    500: {
+    650: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
