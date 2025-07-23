@@ -106,7 +106,6 @@
 
 .hero-actions {
   display: flex;
-
   gap: 1rem;
 }
 
@@ -115,7 +114,7 @@
   border-radius: 2rem;
   box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.18);
   display: block;
-  height: 320px;
+  height: auto;
 }
 
 .hero-badge {
@@ -184,17 +183,28 @@
     left: -0.5rem;
   }
 
- .hero-badge-number{
+  .hero-badge-number {
+    font-size: 1.1rem;
+  }
 
-  font-size: 1.1rem;
- }
-
- .hero-badge-label{
-
-  font-size: 0.55rem;
- }
+  .hero-badge-label {
+    font-size: 0.55rem;
+  }
 
   .hero-badge {
     padding: 0.8rem 0.6rem;
   }
+
+  .hero-clients {
+    color: #000000;
+    margin-left: 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .hero-actions {
+    flex-direction: column;
+  }
+  
 }
