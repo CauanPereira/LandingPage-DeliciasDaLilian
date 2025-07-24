@@ -19,11 +19,11 @@
 .product-category-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
-  border-color: var(--brown-700);
+
 }
 
 .category-header {
-  background: var(--brown-700);
+  background: var(--pink-600);
   color: var(--white);
   padding: 2.5rem 2rem;
   text-align: center;
@@ -114,21 +114,9 @@
   overflow: hidden;
 }
 
-.product-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--pink-500);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
 .product-card:hover {
   transform: translateY(-4px);
-  border-color: var(--brown-700);
+  border-color: var(--pink-600);
   box-shadow: 0 8px 25px rgba(29, 38, 107, 0.15);
 }
 
@@ -201,7 +189,7 @@
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  border: 1px solid var(--brown-700);
+  border: 1px solid var(--pink-600);
   transition: all 0.3s ease;
 }
 
@@ -212,7 +200,7 @@
 
 .info-card i {
   font-size: 2rem;
-  color: var(--brown-700);
+  color: var(--pink-500);
   flex-shrink: 0;
   background: rgba(29, 38, 107, 0.1);
   padding: 1rem;

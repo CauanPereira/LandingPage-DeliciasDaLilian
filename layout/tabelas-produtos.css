@@ -1,7 +1,7 @@
 /* --- LAYOUT: TABELAS PRODUTOS --- */
 
 #tabelas-produtos.section {
-  background: var(--pink-50);
+  background: var(--white);
   padding: 4rem 0;
   display: flex;
   justify-content: center;

@@ -103,7 +103,7 @@
 }
 
 .product-button:hover {
-  background: var(--brown-500);
+  background: var(--pink-500);
 }
 
 .product-button i {

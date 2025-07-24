@@ -52,44 +52,6 @@
   margin: 0 0 2.5rem 0;
 }
 
-.accordion__btn {
-  background: var(--pink-500);
-  color: var(--white);
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
-}
-
-.accordion__btn:hover {
-  background: var(--pink-600);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.4);
-}
-
-.accordion__btn i {
-  font-size: 1.2rem;
-}
-
-/* Animações de reveal */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* Responsividade */
 @media (max-width: 768px) {
   .accordion__description {
