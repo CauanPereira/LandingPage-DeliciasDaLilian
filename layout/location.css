@@ -4,7 +4,7 @@
   width: 100%;
   height: auto;
   position: relative;
-  padding: 5rem 20px;
+  padding: 5rem 0;
   background: var(--brown-700);
 }
 
@@ -37,6 +37,7 @@
 .map-container {
   width: 100%;
   max-width: 710px;
+  padding: 0 30px;
 }
 
 .location-iframe {
@@ -50,6 +51,7 @@
 .location-info-container {
   max-width: 320px;
   width: 100%;
+  padding: 0 30px;
 }
 
 .info-block {
@@ -102,70 +104,31 @@
     flex-wrap: wrap;
   }
 
-  .map-container {
-    max-width: 650px;
-    margin: 0 auto;
-  }
-
-  .location-info-container {
-    max-width: 650px;
-    margin: 0 auto;
-    margin-top: 2.5rem;
-  }
 }
 
 @media (max-width: 768px) {
-  .location-section {
-    padding: 5rem 20px;
-    min-height: auto;
-  }
-
-  .location-title {
-    font-size: 2rem;
-  }
-
-  .location-subtitle {
-    font-size: 1.125rem;
-  }
-
+ 
   .location-iframe {
-    height: 350px;
-    max-width: 600px;
-    margin-bottom: 2.5rem;
+    height: 400px;
   }
 
-  .info-title {
-    font-size: 1.25rem;
+  .map-container, .location-info-container{
+    padding: 0 20px;
   }
-
-  .info-text {
+  
+  .location-title {
+    font-size: 2.1rem;
+  }
+  
+  .location-subtitle {
     font-size: 1rem;
-  }
-
-  .location-btn {
-    font-size: 1.125rem;
-    padding: 0.625rem 1.5rem;
   }
 }
 
-@media (max-width: 480px) {
-  .location-section {
-    padding: 3rem 15px;
-  }
-
-  .location-title {
-    font-size: 1.75rem;
-  }
-
-  .location-subtitle {
-    font-size: 1rem;
-  }
-
+@media (max-width: 320px) {
+ 
   .location-iframe {
-    height: 300px;
+    height: 350px;
   }
-
-  .location-info-container {
-    text-align: center;
-  }
+  
 }

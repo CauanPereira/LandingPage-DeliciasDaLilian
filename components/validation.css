@@ -4,8 +4,19 @@
 
 .validation {
   width: 100%;
-  padding: 30px 20px;
+  max-width: 1200px;
+  padding: 30px 0px;
   height: auto;
+  margin: 0 auto;
+}
+
+.image-validation{
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.18);
+  display: block;
+  max-width: 650px;
+  min-height: 800px;
 }
 
 .validation__item.background__pink {
@@ -67,10 +78,10 @@
 
 .validation__authority {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+    align-items: center;
+  justify-content: space-between;
   padding: 0 20px;
+  gap: 20px;
 }
 
 .validation__image {
@@ -78,7 +89,7 @@
   width:100%;                                                 
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+
 }
 
 .validation__item-img {
@@ -98,7 +109,6 @@
   align-items: center;
   gap: 20px;
   width: 100%;
-  padding: 0 10px;
 }
 
 .validation__item-att {
