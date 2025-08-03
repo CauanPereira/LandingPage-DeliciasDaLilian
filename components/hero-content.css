@@ -16,6 +16,7 @@
 
 .hero-bg-image {
   width: 100%;
+
 }
 
 .hero-content {
@@ -116,6 +117,7 @@
   display: block;
   height: auto;
   max-width: 500px;
+  min-height: 400px;
 }
 
 .hero-badge {
