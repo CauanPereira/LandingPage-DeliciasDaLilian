@@ -4,6 +4,7 @@
 .section__sazonais {
   background: var(--pink-600);
   padding: 5rem 0;
+  position: relative;
 }
 
 .section__sazonais .container {

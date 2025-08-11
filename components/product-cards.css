@@ -59,7 +59,7 @@
 }
 
 .category-subtitle {
-  font-size: 1.1rem;
+  font-size: 1rem;
   opacity: 0.95;
   margin: 0;
   color: var(--white);
@@ -213,7 +213,7 @@
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .product-cards-list {
     grid-template-columns: 1fr;
   }
@@ -256,4 +256,11 @@
   .info-card i {
     margin-bottom: 0.5rem;
   }
+
+  .cards-info {
+    
+    grid-template-columns: 1fr ;
+    
+  }
+  
 }

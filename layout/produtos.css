@@ -8,11 +8,23 @@
 }
 
 .blue {
-  background: var(--brown-700);
+  background: var(--brown-600);
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
+
+.blue::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 150px;
+  background-color: blue;
+  clip-path: polygon(0% 0%, 0% 0%, 30% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
 
 .products-grid {
   display: flex;

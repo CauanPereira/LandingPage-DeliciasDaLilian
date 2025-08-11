@@ -15,7 +15,7 @@
   border-radius: 2rem;
   box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.18);
   display: block;
-
+  max-width: 535px;
   min-height: 850px;
 }
 
@@ -169,15 +169,12 @@
     flex-direction: column;
   }
 
-  .validation {
-    padding: 30px 0px;
-  }
 }
 
 @media (max-width: 720px) {
-  .validation__item-img {
-    min-width: 400px;
-  }
+  .validation__item{
+    width: none;
+  } 
 }
 
 @media (max-width: 510px) {
@@ -187,18 +184,12 @@
 
   .validation__item-att {
     max-width: 300px;
-    width: 100%;
+    
   }
 }
 
 @media (max-width: 320px) {
-  .validation__item-img {
-    min-width: 270px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .validation__container {
-    max-width: 1140px;
+  .validation__item-att {
+    max-width: 270px;
   }
 }
